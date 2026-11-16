@@ -178,7 +178,7 @@ ggsave("plots/PCA_RESPOT_G_VanRaden_PCA_G_FRS.png", width = 11, height = 5)
 
 ##### Year geno plot of PC #####
 
-ID_kept_yeargeno <- read.csv("~/RESPOT/GWAS_drone/data/original_danespo_files/genotypes/Helene_QC_imputed/ID_kept_yeargeno", sep="")
+ID_kept_yeargeno <- read.csv("~/RESPOT/GWAS_drone/data/original_danespo_files/genotypes/ID_kept_yeargeno", sep="")
 colnames(ID_kept_yeargeno) <- c("IdX", "Rank", "Year_geno")
 
 clone_market_ordered <- left_join(clone_market_ordered, ID_kept_yeargeno, by = "IdX")
