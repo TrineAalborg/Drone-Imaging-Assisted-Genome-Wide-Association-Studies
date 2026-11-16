@@ -63,7 +63,7 @@ map_sub_red <- map_sub[map_sub$chr != 0 & map_sub$chr != 13, ]
 
 ### SNP density plot ###
 
-setwd("/home/bio.aau.dk/vm82rp/RESPOT/GWAS_drone/plots/") # setwd for where the plot is stored automatically
+setwd("~/RESPOT/GWAS_drone/plots/") # setwd for where the plot is stored automatically
 
 CMplot(map_sub_red,plot.type="d",bin.size=1e6,chr.den.col=c("darkgreen", "yellow", "red"),file="jpg",file.name="",dpi=300,
        main="SNP density, 1 Mb window",file.output=TRUE,verbose=TRUE,width=9,height=6)
