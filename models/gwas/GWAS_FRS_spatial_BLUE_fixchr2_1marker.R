@@ -42,7 +42,7 @@ load("data/phenotypes/spatial_matrix_scaled_FRS.RData")
 load("data/phenotypes/FRS_final_pt_spatial.RData")
 pt_FRS <- pt_sp
 
-ID_kept_yeargeno <- read.csv("~/RESPOT/GWAS_drone/data/original_danespo_files/genotypes/Helene_QC_imputed/ID_kept_yeargeno", sep="")
+ID_kept_yeargeno <- read.csv("~/RESPOT/GWAS_drone/data/original_danespo_files/genotypes/ID_kept_yeargeno", sep="")
 colnames(ID_kept_yeargeno) <- c("IdX", "Rank", "Year_geno")
 
 pt_FRS <- left_join(pt_FRS, ID_kept_yeargeno, by = "IdX")

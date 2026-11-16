@@ -43,7 +43,7 @@ load("data/phenotypes/SKT_final_pt_spatialpertrial.RData")
 pt_SKT <- pt_sp
 pt_SKT$FL <- paste0(pt_SKT$Mark, 0, pt_SKT$Bane)
 
-ID_kept_yeargeno <- read.csv("~/RESPOT/GWAS_drone/data/original_danespo_files/genotypes/Helene_QC_imputed/ID_kept_yeargeno", sep="")
+ID_kept_yeargeno <- read.csv("~/RESPOT/GWAS_drone/data/original_danespo_files/genotypes/ID_kept_yeargeno", sep="")
 colnames(ID_kept_yeargeno) <- c("IdX", "Rank", "Year_geno")
 
 pt_SKT <- left_join(pt_SKT, ID_kept_yeargeno, by = "IdX")
