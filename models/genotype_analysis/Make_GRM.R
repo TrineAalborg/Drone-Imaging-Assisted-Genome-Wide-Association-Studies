@@ -11,7 +11,7 @@
 ####################################
 
 ###### Set working directory #######
-setwd("/home/bio.aau.dk/vm82rp/RESPOT/GWAS_drone")
+setwd("~/RESPOT/GWAS_drone")
 rm(list=ls())
 
 set.seed(123)
