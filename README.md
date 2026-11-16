@@ -7,3 +7,4 @@ Currently uploaded are the scripts required to perform population stratification
 The files also include scripts for preliminary genotype and phenotype analysis. 
 
 The genotype and phenotype data the analysis is based on is publicly available at the Zenodo repository: https://doi.org/10.5281/zenodo.17251323. Note that due to confidentiality agreements on the custom SNP array the genomic positions of the array markers are masked in the genotype dataset. 
+Please also note that the filenames in the scripts do not completely match the published filenames, as these have been polished and masked (clone IDs, marker IDs) - as all data is disclosed in the available files, data integration and wrangling steps can be skipped.
