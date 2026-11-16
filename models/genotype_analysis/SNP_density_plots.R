@@ -29,7 +29,7 @@ library(CMplot)
 load("data/genotypes/Geno_2020_to_2024_QC_imputed.RData")
 
 # Read the SNP positional file
-map <- read.table("data/original_danespo_files/genotypes/19BetSol_nameSort_chr_position.txt", header = T)
+map <- read.table("data/original_danespo_files/genotypes/map.txt", header = T)
 
 # Replace "-" with "." in the probe name (as is done when loading genotypes, side effect)
 map$Probe <- gsub("-", ".", map$Probe)
